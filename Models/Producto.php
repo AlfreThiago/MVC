@@ -6,6 +6,14 @@ class Producto {
     public function __construct() {
     $this->db=conectar();
     }
+    public function crear($nombre,$precio){
+        $sql="INSERT INTO productos (nombre, precio) VALUES ('$nombre','$precio')";
+        return $this->db->query($sql);
+    }
+    public function borrar($id){
+        $sql="DELETE FROM productos WHERE id=$id";
+        return $this->db->query($sql);
+    }
     public function listar(){
         $sql="SELECT*FROM productos";
         return $this->db->query($sql);

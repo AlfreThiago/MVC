@@ -7,7 +7,16 @@ class ProductoController {
         $resultados=$producto->listar();
         include("views/producto/listar.php");
     }
-    
+    public function crear(){
+        include("views/producto/crear.php")
+    }
+    public function guardar(){
+        $producto=new Producto();
+        $nombre=$_POST['nombre'];
+        $precio=$_POST['precio'];
+        $producto->crear($nombre, $precio);
+        header("Location:index.php");
+    }
 public function editar() {
     $producto = new Producto();
     $id = $_GET['id'];
