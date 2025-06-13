@@ -8,7 +8,7 @@ class ProductoController {
         include("views/producto/listar.php");
     }
     public function crear(){
-        include("views/producto/crear.php")
+        include("views/producto/crear.php");
     }
     public function guardar(){
         $producto=new Producto();
