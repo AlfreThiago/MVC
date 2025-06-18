@@ -13,8 +13,8 @@ class UsuarioController {
     public function guardar(){
         $usuario=new Usuario();
         $nombre=$_POST['nombre'];
-        $precio=$_POST['precio'];
-        $usuario->crear($nombre, $precio);
+        $contrasena=$_POST['contrasena'];
+        $usuario->crear($nombre, $contrasena);
         header("Location:index.php");
     }
 public function editar() {
@@ -27,8 +27,8 @@ public function actualizar() {
 $usuario = new Usuario(); 
 $id = $_POST['id'];
 $nombre = $_POST['nombre'];
-$precio = $_POST['precio'];
-$usuario->actualizar($id, $nombre, $precio); 
+$contrasena = $_POST['contrasena'];
+$usuario->actualizar($id, $nombre, $contrasena); 
 header("Location: index.php");
 }
 }

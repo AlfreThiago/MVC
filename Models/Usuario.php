@@ -6,8 +6,8 @@ class Usuario {
     public function __construct() {
     $this->db=conectar();
     }
-    public function crear($nombre,$precio){
-        $sql="INSERT INTO usuarios (nombre, precio) VALUES ('$nombre','$precio')";
+    public function crear($nombre,$contrasena){
+        $sql="INSERT INTO usuarios (nombre, contrasena) VALUES ('$nombre','$contrasena')";
         return $this->db->query($sql);
     }
     public function borrar($id){
@@ -18,8 +18,8 @@ class Usuario {
         $sql="SELECT*FROM usuarios";
         return $this->db->query($sql);
     }
-    public function actualizar($id,$nombre,$precio){
-        $sql="UPDATE usuarios SET nombre='$nombre', precio='$precio' WHERE id=$id";
+    public function actualizar($id,$nombre,$contrasena){
+        $sql="UPDATE usuarios SET nombre='$nombre', contrasena='$contrasena' WHERE id=$id";
         return $this->db->query($sql);
     }
     public function buscarPorId($id){
