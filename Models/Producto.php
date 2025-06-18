@@ -11,7 +11,7 @@ class Producto {
         return $this->db->query($sql);
     }
     public function guardar($guardar, $precio){
-        $sql="INSERT INTO productos (nombre, precio)VALUES ('$nombre','$precio')";
+        $sql="INSERT INTO productos (nombre, precio) VALUES ('$nombre','$precio')";
         return $this->db->query($sql);
     }
     public function borrar($id){

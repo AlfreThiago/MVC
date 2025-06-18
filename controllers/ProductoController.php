@@ -15,7 +15,7 @@ class ProductoController {
         $nombre=$_POST['nombre'];
         $precio=$_POST['precio'];
         $producto->crear($nombre, $precio);
-        header("Location:index.php");
+        header("Location:/../index.php");
     }
 public function editar() {
     $producto = new Producto();
