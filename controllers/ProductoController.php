@@ -31,5 +31,11 @@ $precio = $_POST['precio'];
 $producto->actualizar($id, $nombre, $precio); 
 header("Location: index.php");
 }
+public function borrar(){
+    $producto=new Producto();
+    $id=$_GET['id'];
+    $producto->borrar($id);
+    header("Location:index.php");
+}
 }
 ?>

@@ -10,10 +10,7 @@ class Producto {
         $sql="INSERT INTO productos (nombre, precio) VALUES ('$nombre','$precio')";
         return $this->db->query($sql);
     }
-    public function guardar($guardar, $precio){
-        $sql="INSERT INTO productos (nombre, precio) VALUES ('$nombre','$precio')";
-        return $this->db->query($sql);
-    }
+
     public function borrar($id){
         $sql="DELETE FROM productos WHERE id=$id";
         return $this->db->query($sql);
@@ -29,6 +26,10 @@ class Producto {
     public function buscarPorId($id){
         $sql="SELECT*FROM productos WHERE id=$id";
         return $this->query($sql)->fetch_assoc();
+    }
+    public function borrar($id){
+        $sql="DELETE FROM productos WHERE id=$id"
+        return $this->db->query($sql);
     }
 }
 ?>
