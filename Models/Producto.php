@@ -27,9 +27,5 @@ class Producto {
         $sql="SELECT*FROM productos WHERE id=$id";
         return $this->query($sql)->fetch_assoc();
     }
-    public function borrar($id){
-        $sql="DELETE FROM productos WHERE id=$id"
-        return $this->db->query($sql);
-    }
 }
 ?>
