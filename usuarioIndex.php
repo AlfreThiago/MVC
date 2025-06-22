@@ -1,7 +1,9 @@
 <?php
+
 require_once("config/conexion.php");
-require_once("controllers/ProductoController.php");
-$controller = new ProductoController();
+require_once("controllers/UsuarioController.php");
+
+$controller = new UsuarioController();
 
 $accion = $_GET['accion'] ?? 'index';
 
@@ -18,4 +20,5 @@ if ($accion == 'crear') {
 } else {
     $controller->index();
 }
+
 ?>
