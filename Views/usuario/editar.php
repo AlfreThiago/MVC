@@ -30,4 +30,3 @@
 </body>
 
 </html>
-<link rel="stylesheet" href="css.css">
