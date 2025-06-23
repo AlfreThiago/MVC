@@ -19,7 +19,7 @@ class UsuarioController {
         $nombre = $_POST['nombre'];
         $email = $_POST['email'];
         $usuario->guardar($nombre, $email);
-        header("Location: UsuarioI.php");
+        header("Location: usuarioIndex.php");
     }
 
     public function editar() {
@@ -35,14 +35,14 @@ class UsuarioController {
         $nombre = $_POST['nombre'];
         $email = $_POST['email'];
         $usuario->actualizar($id, $nombre, $email);
-        header("Location: UsuarioI.php");
+        header("Location: usuarioIndex.php");
     }
     
     public function borrar() {
         $usuario = new Usuario();
         $id = $_GET['id'];
         $usuario->borrar($id);
-        header("Location: UsuarioI.php");
+        header("Location: usuarioIndex.php");
     }
 }
 ?>
