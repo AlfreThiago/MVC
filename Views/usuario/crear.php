@@ -17,7 +17,7 @@
 
 <body>
     
-    <form method="POST" action="UsuarioI.php?accion=guardar">
+    <form method="POST" action="usuarioIndex.php?accion=guardar">
         
         Nombre: <input type="text" name="nombre"><br>
         
