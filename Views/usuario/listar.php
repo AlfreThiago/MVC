@@ -18,7 +18,7 @@ require_once("config/conexion.php");
 
     <a href="index.php?accion=editar&id=<?= $p['id'] ?>">Editar</a>
 
-    <a href="index.php?accion=borrar&id=<?= $p['id'] ?>" onclick="return confirm('¿Seguro que quieres borrar este producto?');">Borrar</a> 
+    <a href="index.php?accion=borrar&id=<?= $p['id'] ?>" onclick="return confirm('¿Seguro que quieres eliminar este producto?');">Eliminar</a> 
 
 </p>
 
