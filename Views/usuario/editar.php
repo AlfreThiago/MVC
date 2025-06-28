@@ -12,7 +12,7 @@
 </head>
 
 <header>
-    <h2>Crear Usuario</h2>
+    <h2>Editar Usuario</h2>
 </header>
 
 <body>
