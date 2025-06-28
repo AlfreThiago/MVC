@@ -8,7 +8,7 @@ require_once("config/conexion.php");
 </header>
 
 <br>
-<a href="UsuarioI.php?accion=crear">Crear nuevo Usuario</a>
+<a href="usuarioIndex.php?accion=crear">Crear nuevo Usuario</a>
 
 <?php foreach ($resultados as $p): ?>
 
